@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xml' href='mod.xsl'?>
+<!--Modules List, version='1.0'-->
+<root>
+	<componentLib name="Mathematical Modules">
+		<component name="add" type="0" dllPath="SYS_MATH" funcName="mise_add">
+			<inputs>addend#addend2</inputs>
+			<outputs>output</outputs>
+		</component>
+	</componentLib>
+	<componentLib name="Input Sources">
+		<component name="sin" type="0" dllPath="SYS_INPUT" funcName="sin">
+			<inputs></inputs>
+			<outputs>output</outputs>
+		</component>
+		<component name="const" type="0" dllPath="SYS_OUTPUT" funcName="const">
+			<inputs></inputs>
+			<outputs>output</outputs>
+		</component>
+	</componentLib>
+	<componentLib name="Data Collectors">
+	</componentLib>
+	<componentLib name="User Defined Modules">
+	</componentLib>
+</root>
