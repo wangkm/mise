@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type='text/xml' href='mod.xsl'?>
+<!--Modules List, version='1.0'-->
+<root>
+	<componentLib name="Input Sources" caption="输入源">
+		<component name="clock" caption="仿真时钟" type="100" dllPath="" funcName="">
+			<inputs></inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="sin" caption="正弦函数输入源(sin)" type="101" dllPath="" funcName="">
+			<inputs></inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="cos" caption="余弦函数输入源(cos)" type="102" dllPath="" funcName="">
+			<inputs></inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="step" caption="阶跃函数(step)" type="104" dllPath="" funcName="">
+			<inputs></inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="const" caption="常数输入源(const)" type="103" dllPath="" funcName="">
+			<inputs></inputs>
+			<outputs>out:1001</outputs>
+		</component>
+	</componentLib>
+	<componentLib name="Mathematical Modules" caption="标准数学库">
+		<component name="add" caption="加法器(add)" type="201" dllPath="" funcName="">
+			<inputs>in1:1001:0.0#in2:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="multiply" caption="乘法器(multiply)" type="202" dllPath="" funcName="">
+			<inputs>in1:1001:0.0#in2:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="reciprocal" caption="取倒数(reciprocal)" type="203" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="power" caption="幂运算(A^B)" type="204" dllPath="" funcName="">
+			<inputs>A:1001:0.0#B:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="sin" caption="正弦函数(sin)" type="0" dllPath="components\math.dll" funcName="mise_math_sin" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="cos" caption="余弦函数(cos)" type="0" dllPath="components\math.dll" funcName="mise_math_cos" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="tan" caption="正切函数(tan)" type="0" dllPath="components\math.dll" funcName="mise_math_tan" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="asin" caption="反正弦函数(asin)" type="0" dllPath="components\math.dll" funcName="mise_math_asin" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="acos" caption="反余弦函数(acos)" type="0" dllPath="components\math.dll" funcName="mise_math_acos" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="atan" caption="反正切函数(atan)" type="0" dllPath="components\math.dll" funcName="mise_math_atan" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="ln" caption="自然对数(ln)" type="0" dllPath="components\math.dll" funcName="mise_math_log" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:1.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="log" caption="常用对数(log)" type="0" dllPath="components\math.dll" funcName="mise_math_log10" width="40" height="40" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="1" display_port="0">
+			<inputs>in:1001:1.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+	</componentLib>
+	<componentLib name="Mathematical Modules" caption="连续系统仿真库">
+		<component name="differential" caption="微分(differential)" type="211" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="integral" caption="积分(integral)" type="212" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="transfun" caption="传递函数(transfun)" type="213" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+		<component name="zeropole" caption="零-极点分析(zero-pole)" type="214" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs>out:1001</outputs>
+		</component>
+	</componentLib>
+	<componentLib name="Data Collectors" caption="数据输出">
+		<component name="filer" caption="输出到文件(filer)" type="301" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs></outputs>
+		</component>
+		<component name="monitor" caption="仿真曲线(monitor)" type="302" dllPath="" funcName="">
+			<inputs>in:1001:0.0</inputs>
+			<outputs></outputs>
+		</component>
+	</componentLib>
+	<componentLib name="User Defined Modules" caption="自定义模块(UDMs)">
+    <component name="UDF Module" caption="自定义模块(UDM)" type="0" dllPath="" funcName="" width="70" height="70" inputs_min="1" inputs_max="1" outputs_min="1" outputs_max="-1" display_port="0">
+      <inputs>in:1001:0.0</inputs>
+      <outputs>out:1001</outputs>
+    </component>
+  </componentLib>
+</root>
